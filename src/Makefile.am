@@ -56,7 +56,7 @@ libspatialite_la_LDFLAGS = -version-info 8:2:1
 libspatialite_la_LIBADD += -ldl -lm
 else
 libspatialite_la_LDFLAGS = -version-info 8:2:1
-libspatialite_la_LIBADD += -lpthread -ldl -lm
+libspatialite_la_LIBADD += -ldl -lm
 endif
 endif
 
@@ -93,7 +93,7 @@ mod_spatialite_la_LDFLAGS = -module -version-info 8:0:1
 mod_spatialite_la_LIBADD += -ldl -lm
 else
 mod_spatialite_la_LDFLAGS = -module -version-info 8:0:1
-mod_spatialite_la_LIBADD += -lpthread -ldl -lm
+mod_spatialite_la_LIBADD += -ldl -lm
 endif
 endif
 
