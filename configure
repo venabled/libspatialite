@@ -12177,7 +12177,7 @@ aix[4-9]*)
       # If using run time linking (on AIX 4.2 or later) use lib<name>.so
       # instead of lib<name>.a to let people know that these are not
       # typical AIX shared libraries.
-      library_names_spec='${libname}${release}${shared_ext}$versuffix ${libname}${shared_ext} $libname${shared_ext}'
+      library_names_spec='${libname}${shared_ext} $libname${shared_ext}'
     else
       # We preserve .a as extension for shared libraries through AIX4.2
       # and later when we are not doing run time linking.
@@ -12193,7 +12193,7 @@ amigaos*)
   powerpc)
     # Since July 2007 AmigaOS4 officially supports .so libraries.
     # When compiling the executable, add -use-dynld -Lsobjs: to the compileline.
-    library_names_spec='${libname}${release}${shared_ext}$versuffix ${libname}${shared_ext} $libname${shared_ext}'
+    library_names_spec='${libname}${shared_ext} $libname${shared_ext}'
     ;;
   m68k)
     library_names_spec='$libname.ixlibrary $libname.a'
@@ -12212,7 +12212,7 @@ beos*)
 bsdi[45]*)
   version_type=linux
   need_version=no
-  library_names_spec='${libname}${release}${shared_ext}$versuffix ${libname}${shared_ext} $libname${shared_ext}'
+  library_names_spec='${libname}${shared_ext} $libname${shared_ext}'
   soname_spec='${libname}${shared_ext}'
   finish_cmds='PATH="\$PATH:/sbin" ldconfig $libdir'
   shlibpath_var=LD_LIBRARY_PATH
@@ -12441,7 +12441,7 @@ hpux9* | hpux10* | hpux11*)
     dynamic_linker="$host_os dld.so"
     shlibpath_var=LD_LIBRARY_PATH
     shlibpath_overrides_runpath=yes # Unless +noenvvar is specified.
-    library_names_spec='${libname}${release}${shared_ext}$versuffix ${libname}${shared_ext} $libname${shared_ext}'
+    library_names_spec='${libname}${shared_ext} $libname${shared_ext}'
     soname_spec='${libname}${shared_ext}'
     if test "X$HPUX_IA64_MODE" = X32; then
       sys_lib_search_path_spec="/usr/lib/hpux32 /usr/local/lib/hpux32 /usr/local/lib"
@@ -12456,7 +12456,7 @@ hpux9* | hpux10* | hpux11*)
     dynamic_linker="$host_os dld.sl"
     shlibpath_var=LD_LIBRARY_PATH # How should we handle SHLIB_PATH
     shlibpath_overrides_runpath=yes # Unless +noenvvar is specified.
-    library_names_spec='${libname}${release}${shared_ext}$versuffix ${libname}${shared_ext} $libname${shared_ext}'
+    library_names_spec='${libname}${shared_ext} $libname${shared_ext}'
     soname_spec='${libname}${shared_ext}'
     sys_lib_search_path_spec="/usr/lib/pa20_64 /usr/ccs/lib/pa20_64"
     sys_lib_dlsearch_path_spec=$sys_lib_search_path_spec
@@ -12466,7 +12466,7 @@ hpux9* | hpux10* | hpux11*)
     dynamic_linker="$host_os dld.sl"
     shlibpath_var=SHLIB_PATH
     shlibpath_overrides_runpath=no # +s is required to enable SHLIB_PATH
-    library_names_spec='${libname}${release}${shared_ext}$versuffix ${libname}${shared_ext} $libname${shared_ext}'
+    library_names_spec='${libname}${shared_ext} $libname${shared_ext}'
     soname_spec='${libname}${shared_ext}'
     ;;
   esac
@@ -12535,7 +12535,7 @@ linux* | k*bsd*-gnu | kopensolaris*-gnu)
   version_type=linux
   need_lib_prefix=no
   need_version=no
-  library_names_spec='${libname}${release}${shared_ext}$versuffix ${libname}${shared_ext} $libname${shared_ext}'
+  library_names_spec='${libname}${shared_ext} $libname${shared_ext}'
   soname_spec='${libname}${shared_ext}'
   finish_cmds='PATH="\$PATH:/sbin" ldconfig -n $libdir'
   shlibpath_var=LD_LIBRARY_PATH
@@ -12619,7 +12619,7 @@ netbsd*)
 
 newsos6)
   version_type=linux
-  library_names_spec='${libname}${release}${shared_ext}$versuffix ${libname}${shared_ext} $libname${shared_ext}'
+  library_names_spec='${libname}${shared_ext} $libname${shared_ext}'
   shlibpath_var=LD_LIBRARY_PATH
   shlibpath_overrides_runpath=yes
   ;;
@@ -12628,7 +12628,7 @@ newsos6)
   version_type=qnx
   need_lib_prefix=no
   need_version=no
-  library_names_spec='${libname}${release}${shared_ext}$versuffix ${libname}${shared_ext} $libname${shared_ext}'
+  library_names_spec='${libname}${shared_ext} $libname${shared_ext}'
   soname_spec='${libname}${shared_ext}'
   shlibpath_var=LD_LIBRARY_PATH
   shlibpath_overrides_runpath=no
@@ -12676,7 +12676,7 @@ osf3* | osf4* | osf5*)
   need_lib_prefix=no
   need_version=no
   soname_spec='${libname}${shared_ext}'
-  library_names_spec='${libname}${release}${shared_ext}$versuffix ${libname}${shared_ext} $libname${shared_ext}'
+  library_names_spec='${libname}${shared_ext} $libname${shared_ext}'
   shlibpath_var=LD_LIBRARY_PATH
   sys_lib_search_path_spec="/usr/shlib /usr/ccs/lib /usr/lib/cmplrs/cc /usr/lib /usr/local/lib /var/shlib"
   sys_lib_dlsearch_path_spec="$sys_lib_search_path_spec"
@@ -12690,7 +12690,7 @@ solaris*)
   version_type=linux
   need_lib_prefix=no
   need_version=no
-  library_names_spec='${libname}${release}${shared_ext}$versuffix ${libname}${shared_ext} $libname${shared_ext}'
+  library_names_spec='${libname}${shared_ext} $libname${shared_ext}'
   soname_spec='${libname}${shared_ext}'
   shlibpath_var=LD_LIBRARY_PATH
   shlibpath_overrides_runpath=yes
@@ -12713,7 +12713,7 @@ sunos4*)
 
 sysv4 | sysv4.3*)
   version_type=linux
-  library_names_spec='${libname}${release}${shared_ext}$versuffix ${libname}${shared_ext} $libname${shared_ext}'
+  library_names_spec='${libname}${shared_ext} $libname${shared_ext}'
   soname_spec='${libname}${shared_ext}'
   shlibpath_var=LD_LIBRARY_PATH
   case $host_vendor in
@@ -12770,7 +12770,7 @@ tpf*)
   version_type=linux
   need_lib_prefix=no
   need_version=no
-  library_names_spec='${libname}${release}${shared_ext}$versuffix ${libname}${shared_ext} $libname${shared_ext}'
+  library_names_spec='${libname}${shared_ext} $libname${shared_ext}'
   shlibpath_var=LD_LIBRARY_PATH
   shlibpath_overrides_runpath=no
   hardcode_into_libs=yes
@@ -12778,7 +12778,7 @@ tpf*)
 
 uts4*)
   version_type=linux
-  library_names_spec='${libname}${release}${shared_ext}$versuffix ${libname}${shared_ext} $libname${shared_ext}'
+  library_names_spec='${libname}${shared_ext} $libname${shared_ext}'
   soname_spec='${libname}${shared_ext}'
   shlibpath_var=LD_LIBRARY_PATH
   ;;
@@ -16016,7 +16016,7 @@ aix[4-9]*)
       # If using run time linking (on AIX 4.2 or later) use lib<name>.so
       # instead of lib<name>.a to let people know that these are not
       # typical AIX shared libraries.
-      library_names_spec='${libname}${release}${shared_ext}$versuffix ${libname}${shared_ext} $libname${shared_ext}'
+      library_names_spec='${libname}${shared_ext} $libname${shared_ext}'
     else
       # We preserve .a as extension for shared libraries through AIX4.2
       # and later when we are not doing run time linking.
@@ -16032,7 +16032,7 @@ amigaos*)
   powerpc)
     # Since July 2007 AmigaOS4 officially supports .so libraries.
     # When compiling the executable, add -use-dynld -Lsobjs: to the compileline.
-    library_names_spec='${libname}${release}${shared_ext}$versuffix ${libname}${shared_ext} $libname${shared_ext}'
+    library_names_spec='${libname}${shared_ext} $libname${shared_ext}'
     ;;
   m68k)
     library_names_spec='$libname.ixlibrary $libname.a'
@@ -16051,7 +16051,7 @@ beos*)
 bsdi[45]*)
   version_type=linux
   need_version=no
-  library_names_spec='${libname}${release}${shared_ext}$versuffix ${libname}${shared_ext} $libname${shared_ext}'
+  library_names_spec='${libname}${shared_ext} $libname${shared_ext}'
   soname_spec='${libname}${shared_ext}'
   finish_cmds='PATH="\$PATH:/sbin" ldconfig $libdir'
   shlibpath_var=LD_LIBRARY_PATH
@@ -16278,7 +16278,7 @@ hpux9* | hpux10* | hpux11*)
     dynamic_linker="$host_os dld.so"
     shlibpath_var=LD_LIBRARY_PATH
     shlibpath_overrides_runpath=yes # Unless +noenvvar is specified.
-    library_names_spec='${libname}${release}${shared_ext}$versuffix ${libname}${shared_ext} $libname${shared_ext}'
+    library_names_spec='${libname}${shared_ext} $libname${shared_ext}'
     soname_spec='${libname}${shared_ext}'
     if test "X$HPUX_IA64_MODE" = X32; then
       sys_lib_search_path_spec="/usr/lib/hpux32 /usr/local/lib/hpux32 /usr/local/lib"
@@ -16293,7 +16293,7 @@ hpux9* | hpux10* | hpux11*)
     dynamic_linker="$host_os dld.sl"
     shlibpath_var=LD_LIBRARY_PATH # How should we handle SHLIB_PATH
     shlibpath_overrides_runpath=yes # Unless +noenvvar is specified.
-    library_names_spec='${libname}${release}${shared_ext}$versuffix ${libname}${shared_ext} $libname${shared_ext}'
+    library_names_spec='${libname}${shared_ext} $libname${shared_ext}'
     soname_spec='${libname}${shared_ext}'
     sys_lib_search_path_spec="/usr/lib/pa20_64 /usr/ccs/lib/pa20_64"
     sys_lib_dlsearch_path_spec=$sys_lib_search_path_spec
@@ -16303,7 +16303,7 @@ hpux9* | hpux10* | hpux11*)
     dynamic_linker="$host_os dld.sl"
     shlibpath_var=SHLIB_PATH
     shlibpath_overrides_runpath=no # +s is required to enable SHLIB_PATH
-    library_names_spec='${libname}${release}${shared_ext}$versuffix ${libname}${shared_ext} $libname${shared_ext}'
+    library_names_spec='${libname}${shared_ext} $libname${shared_ext}'
     soname_spec='${libname}${shared_ext}'
     ;;
   esac
@@ -16372,7 +16372,7 @@ linux* | k*bsd*-gnu | kopensolaris*-gnu)
   version_type=linux
   need_lib_prefix=no
   need_version=no
-  library_names_spec='${libname}${release}${shared_ext}$versuffix ${libname}${shared_ext} $libname${shared_ext}'
+  library_names_spec='${libname}${shared_ext} $libname${shared_ext}'
   soname_spec='${libname}${shared_ext}'
   finish_cmds='PATH="\$PATH:/sbin" ldconfig -n $libdir'
   shlibpath_var=LD_LIBRARY_PATH
@@ -16456,7 +16456,7 @@ netbsd*)
 
 newsos6)
   version_type=linux
-  library_names_spec='${libname}${release}${shared_ext}$versuffix ${libname}${shared_ext} $libname${shared_ext}'
+  library_names_spec='${libname}${shared_ext} $libname${shared_ext}'
   shlibpath_var=LD_LIBRARY_PATH
   shlibpath_overrides_runpath=yes
   ;;
@@ -16465,7 +16465,7 @@ newsos6)
   version_type=qnx
   need_lib_prefix=no
   need_version=no
-  library_names_spec='${libname}${release}${shared_ext}$versuffix ${libname}${shared_ext} $libname${shared_ext}'
+  library_names_spec='${libname}${shared_ext} $libname${shared_ext}'
   soname_spec='${libname}${shared_ext}'
   shlibpath_var=LD_LIBRARY_PATH
   shlibpath_overrides_runpath=no
@@ -16513,7 +16513,7 @@ osf3* | osf4* | osf5*)
   need_lib_prefix=no
   need_version=no
   soname_spec='${libname}${shared_ext}'
-  library_names_spec='${libname}${release}${shared_ext}$versuffix ${libname}${shared_ext} $libname${shared_ext}'
+  library_names_spec='${libname}${shared_ext} $libname${shared_ext}'
   shlibpath_var=LD_LIBRARY_PATH
   sys_lib_search_path_spec="/usr/shlib /usr/ccs/lib /usr/lib/cmplrs/cc /usr/lib /usr/local/lib /var/shlib"
   sys_lib_dlsearch_path_spec="$sys_lib_search_path_spec"
@@ -16527,7 +16527,7 @@ solaris*)
   version_type=linux
   need_lib_prefix=no
   need_version=no
-  library_names_spec='${libname}${release}${shared_ext}$versuffix ${libname}${shared_ext} $libname${shared_ext}'
+  library_names_spec='${libname}${shared_ext} $libname${shared_ext}'
   soname_spec='${libname}${shared_ext}'
   shlibpath_var=LD_LIBRARY_PATH
   shlibpath_overrides_runpath=yes
@@ -16550,7 +16550,7 @@ sunos4*)
 
 sysv4 | sysv4.3*)
   version_type=linux
-  library_names_spec='${libname}${release}${shared_ext}$versuffix ${libname}${shared_ext} $libname${shared_ext}'
+  library_names_spec='${libname}${shared_ext} $libname${shared_ext}'
   soname_spec='${libname}${shared_ext}'
   shlibpath_var=LD_LIBRARY_PATH
   case $host_vendor in
@@ -16607,7 +16607,7 @@ tpf*)
   version_type=linux
   need_lib_prefix=no
   need_version=no
-  library_names_spec='${libname}${release}${shared_ext}$versuffix ${libname}${shared_ext} $libname${shared_ext}'
+  library_names_spec='${libname}${shared_ext} $libname${shared_ext}'
   shlibpath_var=LD_LIBRARY_PATH
   shlibpath_overrides_runpath=no
   hardcode_into_libs=yes
@@ -16615,7 +16615,7 @@ tpf*)
 
 uts4*)
   version_type=linux
-  library_names_spec='${libname}${release}${shared_ext}$versuffix ${libname}${shared_ext} $libname${shared_ext}'
+  library_names_spec='${libname}${shared_ext} $libname${shared_ext}'
   soname_spec='${libname}${shared_ext}'
   shlibpath_var=LD_LIBRARY_PATH
   ;;
